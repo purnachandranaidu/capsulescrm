@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Capsulecrm">
+    <!-- <listeners>
+        <listener class-name="com.capsulecrm.Utility.Reporting"></listener>   	
+    </listeners> -->
+    <test name="Capsulecrmapplication test">
+        <parameter name="browser" value="chrome"> </parameter>
+        <classes>
+      	<class name="com.capsulecrm.testcases.TC_Loginpage_001"></class>
+      	<class name="com.capsulecrm.testcases.TC_AddPerson_002"></class>
+      	<class name="com.capsulecrm.testcases.TC_AddNewPersonDetails_003"></class>
+
+        </classes>
+    </test>
+</suite>
