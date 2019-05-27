@@ -13,10 +13,11 @@ public class AddPerson extends BaseClass {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//a[@id='ember18']") WebElement AddPerson;
+	@FindBy(xpath="//a[@id='ember18']")
+	 WebElement AddPerson;
 	@FindBy(xpath="//a[text()='Add Person']")WebElement Addperson1;
 	
-	public void Add()
+	public  void Add()
 	{
 		AddPerson.click();
 		

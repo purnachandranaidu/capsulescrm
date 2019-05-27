@@ -1,5 +1,7 @@
 package capsulecrm;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -18,8 +20,8 @@ public class AddNewPersonDetails extends BaseClass {
 	@FindBy(name="party:lnDecorate:ln")WebElement Lastname;
 	@FindBy(name="party:roleDecorate:jobTitle")WebElement Jobtitle;
 	@FindBy(name="party:orgDecorate:org")WebElement Organisation;
-	@FindBy(name="party:j_id304:0:phnDecorate:number")WebElement Phone;
-	@FindBy(name="party:j_id321:0:emlDecorate:nmbr")WebElement Email;
+	@FindBy(xpath="(//input[@class='js-autocompleteOff'])[4]")WebElement Phone;
+	@FindBy(xpath="(//input[@class='js-autocompleteOff'])[5]")WebElement Email;
 	@FindBy(name="party:save")WebElement Savebtn;
 	
 	public void fname(String ffname)
@@ -34,11 +36,18 @@ public class AddNewPersonDetails extends BaseClass {
 	{
 		Jobtitle.sendKeys(jname);
 	}
-	public void org()
+	/*public void org()
 	{
-		Select dropdown = new Select(driver.findElement(By.name("party:orgDecorate:org")));
+		Organisation.sendKeys("Microsoft");
+		WebElement dropdown = driver.findElement(By.id("id=party:orgDecorate:org"));
+		List<WebElement> options = dropdown.findElements(By.tagName("li"));
+		for(int i=0;i<options.size();i++)
+		{
+			options.get(i).click();
+			break;
+		}
 		dropdown.selectByVisibleText("Microsoft");
-	}
+	}*/
 	public void mbl(String mblnum)
 	{
 		Phone.sendKeys(mblnum);

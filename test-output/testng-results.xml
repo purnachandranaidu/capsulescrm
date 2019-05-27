@@ -1,67 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="4" total="7" passed="2">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Capsulecrm" duration-ms="9369" started-at="2019-05-26T14:15:18Z" finished-at="2019-05-26T14:15:28Z">
+  <suite name="Capsulecrm" duration-ms="10206" started-at="2019-05-27T15:17:04Z" finished-at="2019-05-27T15:17:14Z">
     <groups>
     </groups>
-    <test name="Capsulecrmapplication test" duration-ms="9369" started-at="2019-05-26T14:15:18Z" finished-at="2019-05-26T14:15:28Z">
+    <test name="Capsulecrmapplication test" duration-ms="10206" started-at="2019-05-27T15:17:04Z" finished-at="2019-05-27T15:17:14Z">
       <class name="com.capsulecrm.testcases.TC_AddPerson_002">
-        <test-method status="PASS" signature="Addnewperson()[pri:2, instance:com.capsulecrm.testcases.TC_AddPerson_002@6500df86]" name="Addnewperson" duration-ms="3824" started-at="2019-05-26T19:45:22Z" finished-at="2019-05-26T19:45:26Z">
+        <test-method status="PASS" signature="Addnewperson()[pri:2, instance:com.capsulecrm.testcases.TC_AddPerson_002@cb644e]" name="Addnewperson" duration-ms="5430" started-at="2019-05-27T20:47:08Z" finished-at="2019-05-27T20:47:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Addnewperson -->
       </class> <!-- com.capsulecrm.testcases.TC_AddPerson_002 -->
       <class name="com.capsulecrm.testcases.TC_Loginpage_001">
-        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.capsulecrm.testcases.TC_Loginpage_001@42dafa95]" name="SetUp" is-config="true" duration-ms="38230" started-at="2019-05-26T19:44:40Z" finished-at="2019-05-26T19:45:18Z">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.capsulecrm.testcases.TC_Loginpage_001@5cb9f472]" name="SetUp" is-config="true" duration-ms="18482" started-at="2019-05-27T20:46:45Z" finished-at="2019-05-27T20:47:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method status="PASS" signature="UserLogin()[pri:1, instance:com.capsulecrm.testcases.TC_Loginpage_001@42dafa95]" name="UserLogin" duration-ms="4046" started-at="2019-05-26T19:45:18Z" finished-at="2019-05-26T19:45:22Z">
+        <test-method status="PASS" signature="UserLogin()[pri:1, instance:com.capsulecrm.testcases.TC_Loginpage_001@5cb9f472]" name="UserLogin" duration-ms="4086" started-at="2019-05-27T20:47:04Z" finished-at="2019-05-27T20:47:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserLogin -->
       </class> <!-- com.capsulecrm.testcases.TC_Loginpage_001 -->
       <class name="com.capsulecrm.testcases.TC_AddNewPersonDetails_003">
-        <test-method status="FAIL" signature="AddDetails(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.capsulecrm.testcases.TC_AddNewPersonDetails_003@402a079c]" name="AddDetails" duration-ms="1449" started-at="2019-05-26T19:45:26Z" data-provider="registerdata" finished-at="2019-05-26T19:45:28Z">
-          <exception class="org.testng.internal.reflect.MethodMatcherException">
-            <message>
-              <![CDATA[
-Data provider mismatch
-Method: AddDetails([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}])
-Arguments: [(java.lang.String)naidu,(java.lang.String)challa,(java.lang.String)QE,(java.lang.String)MICRO,(java.lang.String)8121950273,(java.lang.String)naidupcn119@gmail.com]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
-Data provider mismatch
-Method: AddDetails([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}])
-Arguments: [(java.lang.String)naidu,(java.lang.String)challa,(java.lang.String)QE,(java.lang.String)MICRO,(java.lang.String)8121950273,(java.lang.String)naidupcn119@gmail.com]
-	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:49)
-	at org.testng.internal.Invoker.injectParameters(Invoker.java:1293)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1187)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+        <test-method status="PASS" signature="verfication_person()[pri:4, instance:com.capsulecrm.testcases.TC_AddNewPersonDetails_003@13805618]" name="verfication_person" duration-ms="357" started-at="2019-05-27T20:47:14Z" finished-at="2019-05-27T20:47:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AddDetails -->
+        </test-method> <!-- verfication_person -->
       </class> <!-- com.capsulecrm.testcases.TC_AddNewPersonDetails_003 -->
     </test> <!-- Capsulecrmapplication test -->
   </suite> <!-- Capsulecrm -->

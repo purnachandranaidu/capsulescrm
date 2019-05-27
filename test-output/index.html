@@ -2,10 +2,9 @@
 
 <html>
   <head>
-  <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
     <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -24,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Capsulecrm">
-              <span class="suite-name border-failed">Capsulecrm</span>
+              <span class="suite-name border-passed">Capsulecrm</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Capsulecrm" class="hide-methods failed suite-Capsulecrm"> (hide)</a> <!-- hide-methods failed suite-Capsulecrm -->
-                      <a href="#" panel-name="suite-Capsulecrm" class="show-methods failed suite-Capsulecrm"> (show)</a> <!-- show-methods failed suite-Capsulecrm -->
-                    </span>
-                    <div class="method-list-content failed suite-Capsulecrm">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Capsulecrm" title="com.capsulecrm.testcases.TC_AddNewPersonDetails_003" hash-for-method="AddDetails">AddDetails</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Capsulecrm -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -124,6 +109,11 @@
                         <a href="#" class="method navigator-link" panel-name="suite-Capsulecrm" title="com.capsulecrm.testcases.TC_Loginpage_001" hash-for-method="UserLogin">UserLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Capsulecrm" title="com.capsulecrm.testcases.TC_AddNewPersonDetails_003" hash-for-method="verfication_person">verfication_person</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Capsulecrm -->
                   </li>
                 </ul>
@@ -136,27 +126,21 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Capsulecrm" class="panel Capsulecrm">
-          <div class="suite-Capsulecrm-class-failed">
+          <div class="suite-Capsulecrm-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.capsulecrm.testcases.TC_AddNewPersonDetails_003</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="AddDetails">
-                  </a> <!-- AddDetails -->
-                  <span class="method-name">AddDetails</span>
-                  <div class="stack-trace">org.testng.internal.reflect.MethodMatcherException: 
-Data provider mismatch
-Method: AddDetails([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}])
-Arguments: [(java.lang.String)naidu,(java.lang.String)challa,(java.lang.String)QE,(java.lang.String)MICRO,(java.lang.String)8121950273,(java.lang.String)naidupcn119@gmail.com]
-... Removed 20 stack frames
-</div> <!-- stack-trace -->
+                  <a name="verfication_person">
+                  </a> <!-- verfication_person -->
+                  <span class="method-name">verfication_person</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Capsulecrm-class-failed -->
+          </div> <!-- suite-Capsulecrm-class-passed -->
           <div class="suite-Capsulecrm-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -244,17 +228,17 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'UserLogin')
-data.setCell(0, 2, 'com.capsulecrm.testcases.TC_Loginpage_001')
-data.setCell(0, 3, 4046);
+data.setCell(0, 1, 'Addnewperson')
+data.setCell(0, 2, 'com.capsulecrm.testcases.TC_AddPerson_002')
+data.setCell(0, 3, 5430);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Addnewperson')
-data.setCell(1, 2, 'com.capsulecrm.testcases.TC_AddPerson_002')
-data.setCell(1, 3, 3824);
+data.setCell(1, 1, 'UserLogin')
+data.setCell(1, 2, 'com.capsulecrm.testcases.TC_Loginpage_001')
+data.setCell(1, 3, 4086);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'AddDetails')
+data.setCell(2, 1, 'verfication_person')
 data.setCell(2, 2, 'com.capsulecrm.testcases.TC_AddNewPersonDetails_003')
-data.setCell(2, 3, 1449);
+data.setCell(2, 3, 357);
 window.suiteTableData['Capsulecrm']= { tableData: data, tableDiv: 'times-div-Capsulecrm'}
 return data;
 }
@@ -274,20 +258,22 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Capsulecrm" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">4 ignored methods</span>
+            <span class="header-content">5 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.capsulecrm.testcases.TC_AddPerson_002</span>
+              <span class="ignored-class-name">com.capsulecrm.testcases.TC_AddNewPersonDetails_003</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">SetUp</span>
+                <br/>
+                <span class="ignored-method-name">AddDetails</span>
                 <br/>
                 <span class="ignored-method-name">Close</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.capsulecrm.testcases.TC_AddNewPersonDetails_003</span>
+              <span class="ignored-class-name">com.capsulecrm.testcases.TC_AddPerson_002</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">SetUp</span>
                 <br/>
@@ -310,14 +296,21 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">UserLogin</span>
-                <span class="method-start">38255 ms</span>
+                <span class="method-start">18497 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.capsulecrm.testcases.TC_AddPerson_002</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">Addnewperson</span>
-                <span class="method-start">42306 ms</span>
+                <span class="method-start">22900 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capsulecrm.testcases.TC_AddNewPersonDetails_003</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verfication_person</span>
+                <span class="method-start">28330 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
