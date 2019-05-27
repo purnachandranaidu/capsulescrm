@@ -14,10 +14,10 @@ public class AddPerson extends BaseClass {
 	}
 	
 	@FindBy(xpath="//a[@id='ember18']")
-	 WebElement AddPerson;
+	static WebElement AddPerson;
 	@FindBy(xpath="//a[text()='Add Person']")WebElement Addperson1;
 	
-	public  void Add()
+	public static  void Add()
 	{
 		AddPerson.click();
 		

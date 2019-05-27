@@ -42,8 +42,7 @@ public class TC_AddNewPersonDetails_003 extends BaseClass {
 	public void verfication_person()
 	{
 		try {
-			AddPerson add=new AddPerson();
-			add.Add();
+			AddPerson.Add();
 			String name=driver.findElement(By.xpath("//TD[@id='ember237']")).getText();
 			
 			System.out.println(name);
